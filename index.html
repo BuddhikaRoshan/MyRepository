@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="LOGO.png" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hello, I'm <span>Budddhika Roshan</span> <br>from Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+
+<!------------------------------- about ------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="333.png">
+                </div>    
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm Buddhika Roshan, a UI/UX Designer from Sri Lanka.
+                    Passionate about eye catchy and user-friendly websites and applications.
+                    I specialize in bringing designs to life with clean, simple and a 
+                    focus on user experience. I'm excited to make the leap and continue 
+                    refining my skills with right company. Thanks for checking out my portfolio!</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>2024</span><br>Google UX Design Course, Google — Certification</li>
+                            <li><span>2024</span><br>Google Data Analytics Professional, Google — Certification</li>
+                            <li><span>2024</span><br>Web Design for Beginners E-Certificate,University of Moratuwa</li>
+                            <li><span>2024</span><br>Front-End Web Development E-Certificate,University of Moratuwa</li>
+                            <li><span>2024</span><br>AI/ML Engineer - Stage 1/ Stage 2,SLIIT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2015</span><br>Passed O/L with 8As & 1C</li>
+                            <li><span>2019</span><br>Passed A/L with 3Ss in Biology Science</li>
+                            <li><span>2024</span><br>underGratuate in BSc(Hons)in Information Technology specialize in Information Technology, SLIIT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------------------------------ Services   ----------------------------------->
+    
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I specialize in creating engaging and user-friendly UI/UX designs for a wide range of 
+                        digital products and services. Whether you're looking to revamp your website, develop 
+                        a new mobile app, or improve your overall user experience, I am here to help bring your vision to life.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>As a web developer, I specialize in creating dynamic and responsive websites that are optimized for 
+                        speed, security, and user experience. My expertise includes front-end and back-end web development, 
+                        as well as website design and deployment.  </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>App Design</h2>
+                    <p>As an app developer, I specialize in creating engaging and user-friendly mobile applications for 
+                        both iOS and Android platforms. With a focus on creating intuitive interfaces and visually 
+                        appealing designs, I work closely with clients to understand their specific needs and goals. </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------- protfolio ------------------------------>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="White Blue Modern Traveling Facebook Cover.png">
+                    <div class="layer">
+                        <h3>Traveling App</h3>
+                        <P>
+                            Island Getaways Traveling App provides a seamless solution for travel planning, 
+                            automating itinerary creation and bookings to enhance efficiency, accuracy, 
+                            and user satisfaction in organizing memorable getaways.
+                        </P>
+                        <a href="https://www.behance.net/gallery/215326555/Island-Getaways-Traveling-App" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="riya.jpg">
+                    <div class="layer">
+                        <h3>Riyasewana Web UI Re-Design</h3>
+                        <P>
+                            Riyasewana Web UI Re-Design (Group Project) aims to enhance the user interface for a seamless browsing experience. 
+                            The redesigned website showcases a variety of features, improving user interaction and accessibility
+                        </P>
+                        <a href="https://www.behance.net/gallery/215352901/Riyasewan-Web-UI-Re-Design" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="Maroon Vibrant Indian Food Restaurant Promotion Instagram Post.jpg">
+                    <div class="layer">
+                        <h3>My Chef Resturant</h3>
+                        <P>
+                            My Chef Restaurant is an AI-powered platform that enhances
+                             the dining experience with personalized menu suggestions, smart reservations, and seamless service.
+                        </P>
+                        <a href="https://www.behance.net/gallery/215380533/My-chef-Restaurant" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    
+<!--------------------------  contact  ------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>buddhikaroshanofficial@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>(+94)77 924 6922</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Personal Resume(Buddhika Roshan Bandara).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Buddhika <i class="fa-solid fa-heart"></i> Roshan</p>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
